@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
 :root {
     
     --clr-primary-1: hsl(205, 86%, 17%);
@@ -213,7 +214,7 @@ nav{
 
 .form-header h2{
     color: #d18407;
-    font-family: 'Flamenco Regular';
+    font-family: 'Flamenco', cursive;
     font-size: 2.5rem;
     font-weight: lighter;
     text-transform: uppercase;
