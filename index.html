@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body>
+
+    <div class="slider-header">
+        <button class="sidebar-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+   
+    <nav>
+       
+        <div class="menu">
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="menu-connect">
+                <ul class="menu-1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-contact">
+                <ul class="menu-2">
+
+                    <li>
+                        <a href="https://www.twitter.com">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.twitter.com">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                        
+                    <li>
+                        <a href="https://www.twitter.com">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+        
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <section class="form">
+            <div class="form-header">
+                <h2>Say Hello!</h2>
+                <div class="underline"></div>
+            </div>
+
+            
+
+            <div class="form-body">
+                <div class="form-body-input">
+                    <label for="username" class="label">Your Name</label>
+                    <input type="text" id ='username' class="user-input" placeholder="Enter your name">
+
+                    <label for="email" class="label">Email</label>
+                    <input type="text" id ='email' class="user-input" placeholder="Enter your email address">
+
+                    <label for="service" class="label">Needed Services</label>
+                        <select name="service" id="service" class="user-input">
+                            <option value="1">Chose service</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">3</option>
+                        </select> 
+
+                    <label for="budget" class="label">Budget</label>
+                        <select name="budget" id="Budget" class="user-input">
+                            <option value="1">Select Budget</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">3</option>
+                       </select> 
+                    
+                    <label for="textarea" class="label">Message</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your message here..."></textarea>
+                </div>
+
+                <div class="form-body-btn">
+                    <button class="btn btn-submit">Submit</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

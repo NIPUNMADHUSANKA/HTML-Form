@@ -1,0 +1,315 @@
+:root {
+    
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+   
+    --clr-primary-5: hsl(205, 78%, 60%);
+    
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.2s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body{
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h2
+{
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-primary);
+}
+h2{
+    font-size: 2rem;
+}
+
+p{
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-5);
+}
+
+nav{
+    background: var(--clr-white);
+    box-shadow: var(--light-shadow);
+}
+
+@media screen and (min-width: 800px) {
+   
+    h2 {
+      font-size: 2.5rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+   
+    h2{
+      line-height: 1;
+    }
+  }
+  .sidebar-toggle{
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite ;
+}
+.sidebar-toggle:hover{
+    color: var(--clr-primary-7);
+}
+
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.close-btn{
+    font-size: 1.75rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+    cursor: pointer;
+    color: var(--clr-red-dark);
+    float: right;
+    padding: 1rem 1.5rem;
+
+}
+.close-btn:hover{
+    color: var(--clr-red-light);
+    transform: rotate(180deg);
+}
+
+.menu-1{
+    margin: 3rem 0 0 0;
+}
+
+.menu-1 a{
+    display: block;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    color: var(--clr-primary-1);
+    transition: var(--transition);
+}
+.menu-1 a:hover{
+    background: var(--clr-primary-10);
+    color: var(--clr-primary-7);
+}
+
+.menu-2{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.menu-2 li{
+    display: inline-block;
+}
+
+.menu-2 a{
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+    color: var(--clr-primary-6);
+    transition: var(--transition);
+}
+.menu-2 a:hover{
+    color: var(--clr-primary-1);
+}
+
+
+.menu{
+    background: #ffe;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 40%;
+    transform: translate(-100%);
+    transition: var(--transition);
+    box-shadow: var(--clr-black);
+}
+
+.show-menu{
+    transform: translate(0);
+}
+
+.form{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+  }
+
+.form-header{
+    margin-top: 10vh;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.form-header h2{
+    color: #d18407;
+    font-family: 'Flamenco Regular';
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+.underline{
+    background: #c59d5f;
+    width: 30vw;
+    height: 0.125rem;
+    border-radius: 5px;
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+}
+.underline:hover{
+    box-shadow: var(--dark-shadow);
+}
+
+@media screen and (max-width:1057px){
+    .underline{
+        width: 40vw;
+    }
+
+}
+
+@media screen and (max-width:832px){
+    .underline{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:688px){
+
+    .form-body{
+        padding: -2rem;
+    }
+    .form-header h2{
+        font-size: 2.3rem;
+    }
+}
+.form-body{
+    background: var(--clr-white);
+    margin-top: -3rem;
+    padding:2rem;
+    transition: var(--transition);
+    border-radius: var(--radius);
+    box-shadow: var(--dark-shadow);
+
+}
+
+.form-body-input{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: column; 
+    padding: -5rem;
+}
+
+label{
+    padding: 10px 0 5px 0;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: var(--clr-primary-5);
+}
+
+.user-input{
+    padding: 0 0 0 6px;
+    height: 25px;
+    border: 0;
+    border-bottom:  1px dotted;
+    
+}
+textarea{
+    padding: 3px 0 0 6px;
+    height: 70px;
+    border: 0;
+    border-bottom:  1px dotted;
+}
+
+.form-body-btn{
+    text-align: center;
+}
+
+.btn-submit{
+    text-align: center;
+    width: 80%;
+    height: 5vh;
+    border: transparent;
+    margin-top: 1rem;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    border-radius: 10rem;
+    background: var(--clr-primary-5);
+    color: var(--clr-primary-9);
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background: var(--clr-primary-9);
+    color: var(--clr-primary-5);
+}
