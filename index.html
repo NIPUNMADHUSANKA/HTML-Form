@@ -71,30 +71,37 @@
             </div>
 
             
-
+            
             <div class="form-body">
                 <div class="form-body-input">
+                    
                     <label for="username" class="label">Your Name</label>
                     <input type="text" id ='username' class="user-input" placeholder="Enter your name">
+                    <span id='1' class="">Please Enter your name</span>
+
 
                     <label for="email" class="label">Email</label>
-                    <input type="text" id ='email' class="user-input" placeholder="Enter your email address">
+                    <input type="email" id ='email' class="user-input" placeholder="Enter your email address">
+                    <span id='2' class="">Please Enter your Email</span>
+                    <span id='5' class="" style="margin-top: -1rem;">Please Enter valid Email</span>
 
                     <label for="service" class="label">Needed Services</label>
-                        <select name="service" id="service" class="user-input">
-                            <option value="1">Chose service</option>
-                            <option value="2">1</option>
-                            <option value="3">2</option>
-                            <option value="4">3</option>
+                        <select name="service" id="Service" class="user-input">
+                            <option value="0">Chose service</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select> 
+                        <span id='3' class="">Please Enter Needed service</span>
 
                     <label for="budget" class="label">Budget</label>
                         <select name="budget" id="Budget" class="user-input">
-                            <option value="1">Select Budget</option>
-                            <option value="2">1</option>
-                            <option value="3">2</option>
-                            <option value="4">3</option>
+                            <option value="0">Select Budget</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                        </select> 
+                       <span id='4' class="">Please Enter your Budget</span>
                     
                     <label for="textarea" class="label">Message</label>
                     <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your message here..."></textarea>
@@ -104,6 +111,8 @@
                     <button class="btn btn-submit">Submit</button>
                 </div>
             </div>
+        
+
             
         </section>
     </main>

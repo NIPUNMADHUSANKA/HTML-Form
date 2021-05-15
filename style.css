@@ -145,7 +145,7 @@ nav{
 }
 
 .menu-1{
-    margin: 3rem 0 0 0;
+    margin: 5rem 0 0 0;
 }
 
 .menu-1 a{
@@ -163,7 +163,7 @@ nav{
 
 .menu-2{
     text-align: center;
-    padding-bottom: 5rem;
+    padding-top: 20rem;
 }
 .menu-2 li{
     display: inline-block;
@@ -186,10 +186,11 @@ nav{
     top: 0;
     left: 0;
     height: 100vh;
-    width: 40%;
+    width: 100vw;
     transform: translate(-100%);
     transition: var(--transition);
     box-shadow: var(--clr-black);
+    
 }
 
 .show-menu{
@@ -312,4 +313,16 @@ textarea{
 .btn-submit:hover{
     background: var(--clr-primary-9);
     color: var(--clr-primary-5);
+}
+
+span{
+    font-size: 10px;
+    color: red;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.span-show{
+    visibility: visible;
+    transition: var(--transition);
 }
